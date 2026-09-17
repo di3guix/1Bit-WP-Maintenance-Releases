@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.4",
+    "published": "2026-09-17T20:40:13+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.4.zip",
+    "sha256": "a956b331700ada3ab962c7f886d049e295bdbe7d96a5f2cc0e63d8b6bebaf554",
+    "notes": "**Plugin**\n- La ofuscación (texto en hexadecimal, `chr()`, base64 largo) solo se informa si en el mismo archivo\n  hay algo que ejecute código: WooCommerce, phpseclib y otras librerías serias la usan y llenaban el\n  informe de falsos positivos."
+  },
+  {
     "version": "1.4.3",
     "published": "2026-09-17T20:31:43+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.3.zip",

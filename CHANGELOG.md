@@ -1,5 +1,12 @@
 # Cambios
 
+## 1.4.4 — 2026-09-17
+
+**Plugin**
+- La ofuscación (texto en hexadecimal, `chr()`, base64 largo) solo se informa si en el mismo archivo
+  hay algo que ejecute código: WooCommerce, phpseclib y otras librerías serias la usan y llenaban el
+  informe de falsos positivos.
+
 ## 1.4.3 — 2026-09-17
 
 **Plugin**

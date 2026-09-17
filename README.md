@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.4.3** (2026-09-17)
+**Última versión: 1.4.4** (2026-09-17)
 
 ---
 
@@ -78,12 +78,20 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.4.4** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.4.zip) | `a956b331700ada3a…` |
 | **1.4.3** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.3.zip) | `de9ab114a26ec206…` |
 | **1.4.2** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.2.zip) | `c29d5bd8cd973aa8…` |
 | **1.4.1** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.1.zip) | `5c670e3ae2510074…` |
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.4.4 — 2026-09-17
+
+**Plugin**
+- La ofuscación (texto en hexadecimal, `chr()`, base64 largo) solo se informa si en el mismo archivo
+  hay algo que ejecute código: WooCommerce, phpseclib y otras librerías serias la usan y llenaban el
+  informe de falsos positivos.
 
 ### 1.4.3 — 2026-09-17
 
