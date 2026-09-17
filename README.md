@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.4.6** (2026-09-17)
+**Última versión: 1.4.7** (2026-09-17)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.4.7** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.7.zip) | `cbc6ae50bbb818db…` |
 | **1.4.6** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.6.zip) | `52ca2341e93272cd…` |
 | **1.4.5** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.5.zip) | `d0add65f1869bca2…` |
 | **1.4.4** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.4.zip) | `a956b331700ada3a…` |
@@ -87,6 +88,17 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.4.7 — 2026-09-17
+
+**Plugin**
+- `/diagnostics/file`: muestra un archivo del sitio para revisar a mano lo que marcó el escaneo
+  (solo lectura, acotado y con usuario administrador).
+
+**Orquestador**
+- `show --site X --path archivo`.
+- `malware_ignore` por sitio en `sites.json`: rutas legítimas conocidas, como las plantillas que
+  el framework Redux escribe en `uploads`.
 
 ### 1.4.6 — 2026-09-17
 

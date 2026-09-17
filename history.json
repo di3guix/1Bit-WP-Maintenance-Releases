@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.7",
+    "published": "2026-09-17T21:13:22+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.7.zip",
+    "sha256": "cbc6ae50bbb818db11f297b9bbbc81a20f5057c653d5a00d1c559a77c182698f",
+    "notes": "**Plugin**\n- `/diagnostics/file`: muestra un archivo del sitio para revisar a mano lo que marcó el escaneo\n  (solo lectura, acotado y con usuario administrador).\n\n**Orquestador**\n- `show --site X --path archivo`.\n- `malware_ignore` por sitio en `sites.json`: rutas legítimas conocidas, como las plantillas que\n  el framework Redux escribe en `uploads`."
+  },
+  {
     "version": "1.4.6",
     "published": "2026-09-17T20:59:16+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.6.zip",

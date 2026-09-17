@@ -1,5 +1,16 @@
 # Cambios
 
+## 1.4.7 — 2026-09-17
+
+**Plugin**
+- `/diagnostics/file`: muestra un archivo del sitio para revisar a mano lo que marcó el escaneo
+  (solo lectura, acotado y con usuario administrador).
+
+**Orquestador**
+- `show --site X --path archivo`.
+- `malware_ignore` por sitio en `sites.json`: rutas legítimas conocidas, como las plantillas que
+  el framework Redux escribe en `uploads`.
+
 ## 1.4.6 — 2026-09-17
 
 **Plugin**
