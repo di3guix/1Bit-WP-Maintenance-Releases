@@ -1,0 +1,9 @@
+[
+  {
+    "version": "1.4.0",
+    "published": "2026-09-17T18:58:24+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.0.zip",
+    "sha256": "f46f82b5260878fa3d66ac7db53b1bf7006fde4607281ab114415b00d3c0d6d2",
+    "notes": "**Plugin**\n- Autoactualización firmada desde `1Bit-WP-Maintenance-Releases`: verifica la firma Ed25519 del\n  manifiesto y el SHA-256 del zip antes de instalar.\n- El propio plugin se actualiza al final de cada corrida y, si la versión nueva no levanta su REST\n  API o tira un error fatal, vuelve sola a la anterior.\n- Cabecera `Update URI` para que WordPress no consulte wordpress.org por este slug.\n\n**Orquestador**\n- `keygen` y `publish` para firmar y publicar versiones.\n- Pruebas dentro del repositorio (`tests/`): `bootstrap.py` y `run_all.py`, más la suite `autoupdate`.\n\n> Es la última versión que hay que subir a mano: las anteriores no saben autoactualizarse."
+  }
+]
