@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.8",
+    "published": "2026-09-17T21:18:19+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.8.zip",
+    "sha256": "5d072c7afd171659ee2f9721ac9a1bd7319e055d15206f0929a6751aec9e5e14",
+    "notes": "**Plugin**\n- El control del núcleo compara contra el paquete del idioma del sitio: en un WordPress en español,\n  `version.php` y otros archivos son distintos a los del paquete en inglés y salían como modificados."
+  },
+  {
     "version": "1.4.7",
     "published": "2026-09-17T21:13:22+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.7.zip",

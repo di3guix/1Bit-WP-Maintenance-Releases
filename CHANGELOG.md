@@ -1,5 +1,11 @@
 # Cambios
 
+## 1.4.8 — 2026-09-17
+
+**Plugin**
+- El control del núcleo compara contra el paquete del idioma del sitio: en un WordPress en español,
+  `version.php` y otros archivos son distintos a los del paquete en inglés y salían como modificados.
+
 ## 1.4.7 — 2026-09-17
 
 **Plugin**
