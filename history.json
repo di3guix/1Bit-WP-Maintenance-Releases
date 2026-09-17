@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.5",
+    "published": "2026-09-17T20:47:33+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.5.zip",
+    "sha256": "d0add65f1869bca268b6ae948922c0e94d9cde60cbc7cce4dda7caf68fd819dc",
+    "notes": "**Plugin**\n- Se corrige la detección de `preg_replace` con modificador `/e`: marcaba como grave cualquier\n  patrón que tuviera barras y comillas adentro (por ejemplo el de UpdraftPlus)."
+  },
+  {
     "version": "1.4.4",
     "published": "2026-09-17T20:40:13+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.4.zip",

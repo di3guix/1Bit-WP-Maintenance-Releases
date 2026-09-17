@@ -1,5 +1,11 @@
 # Cambios
 
+## 1.4.5 — 2026-09-17
+
+**Plugin**
+- Se corrige la detección de `preg_replace` con modificador `/e`: marcaba como grave cualquier
+  patrón que tuviera barras y comillas adentro (por ejemplo el de UpdraftPlus).
+
 ## 1.4.4 — 2026-09-17
 
 **Plugin**
