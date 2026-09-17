@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.2",
+    "published": "2026-09-17T19:47:06+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.2.zip",
+    "sha256": "c29d5bd8cd973aa83d88cb5f2931413ddd341dfad72d510ff695363f623a2135",
+    "notes": "**Plugin**\n- `/inventory` informa el tema padre de cada tema (`parent`).\n\n**Orquestador**\n- Los temas hijo y los plugins listados en `licensed` del sitio ya no se avisan como truchos: muchos\n  premium con licencia solo avisan a WordPress cuando hay versión nueva.\n- `inventory` imprime las carpetas de los posibles truchos para copiarlas a `licensed`."
+  },
+  {
     "version": "1.4.1",
     "published": "2026-09-17T19:32:29+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.1.zip",

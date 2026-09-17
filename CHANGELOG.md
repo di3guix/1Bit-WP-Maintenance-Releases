@@ -1,5 +1,15 @@
 # Cambios
 
+## 1.4.2 — 2026-09-17
+
+**Plugin**
+- `/inventory` informa el tema padre de cada tema (`parent`).
+
+**Orquestador**
+- Los temas hijo y los plugins listados en `licensed` del sitio ya no se avisan como truchos: muchos
+  premium con licencia solo avisan a WordPress cuando hay versión nueva.
+- `inventory` imprime las carpetas de los posibles truchos para copiarlas a `licensed`.
+
 ## 1.4.1 — 2026-09-17
 
 **Plugin**
