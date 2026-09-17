@@ -1,2 +1,2 @@
-# 1Bit-WP-Maintenance-Plugin
-1Bit-WP-Maintenance-Plugin
+# 1Bit-WP-Maintenance-Releases
+1Bit-WP-Maintenance-Releases
