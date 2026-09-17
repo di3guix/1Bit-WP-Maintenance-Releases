@@ -1,5 +1,17 @@
 # Cambios
 
+## 1.4.3 — 2026-09-17
+
+**Plugin**
+- `/diagnostics/malware`: busca código típico de webshell en plugins y temas, PHP dentro de `uploads`
+  y archivos del núcleo de WordPress modificados o faltantes (sumas de verificación de wordpress.org).
+- `/status` informa qué manifiesto de actualización está viendo el sitio (`update_manifest`), para
+  entender por qué un sitio no ve una versión nueva del plugin.
+
+**Orquestador**
+- `malware --site X [--path]`: lista los hallazgos separando lo grave de lo que solo hay que mirar.
+- Suite de pruebas `malware`.
+
 ## 1.4.2 — 2026-09-17
 
 **Plugin**

@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.4.2** (2026-09-17)
+**Última versión: 1.4.3** (2026-09-17)
 
 ---
 
@@ -78,11 +78,24 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.4.3** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.3.zip) | `de9ab114a26ec206…` |
 | **1.4.2** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.2.zip) | `c29d5bd8cd973aa8…` |
 | **1.4.1** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.1.zip) | `5c670e3ae2510074…` |
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.4.3 — 2026-09-17
+
+**Plugin**
+- `/diagnostics/malware`: busca código típico de webshell en plugins y temas, PHP dentro de `uploads`
+  y archivos del núcleo de WordPress modificados o faltantes (sumas de verificación de wordpress.org).
+- `/status` informa qué manifiesto de actualización está viendo el sitio (`update_manifest`), para
+  entender por qué un sitio no ve una versión nueva del plugin.
+
+**Orquestador**
+- `malware --site X [--path]`: lista los hallazgos separando lo grave de lo que solo hay que mirar.
+- Suite de pruebas `malware`.
 
 ### 1.4.2 — 2026-09-17
 

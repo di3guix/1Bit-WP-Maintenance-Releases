@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.3",
+    "published": "2026-09-17T20:31:43+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.3.zip",
+    "sha256": "de9ab114a26ec206b80f2e15d88f236816ddda0d35fcffb91ee5bdc32abab2c3",
+    "notes": "**Plugin**\n- `/diagnostics/malware`: busca código típico de webshell en plugins y temas, PHP dentro de `uploads`\n  y archivos del núcleo de WordPress modificados o faltantes (sumas de verificación de wordpress.org).\n- `/status` informa qué manifiesto de actualización está viendo el sitio (`update_manifest`), para\n  entender por qué un sitio no ve una versión nueva del plugin.\n\n**Orquestador**\n- `malware --site X [--path]`: lista los hallazgos separando lo grave de lo que solo hay que mirar.\n- Suite de pruebas `malware`."
+  },
+  {
     "version": "1.4.2",
     "published": "2026-09-17T19:47:06+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.2.zip",
