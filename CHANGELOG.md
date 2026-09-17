@@ -1,5 +1,18 @@
 # Cambios
 
+## 1.4.1 — 2026-09-17
+
+**Plugin**
+- `/diagnostics/files` desglosa los archivos por tipo (miniaturas, WebP/AVIF generados, backups del
+  optimizador de imágenes, PHP, logs…) y acepta `path` para contar solo una carpeta.
+
+**Orquestador**
+- `files --path`: tabla por tipo y aviso si hay PHP dentro de `uploads`.
+- Suite de pruebas `files`.
+- `publish` arma el zip desde la misma carpeta de la que lee la versión.
+
+> Primera versión que llega sola a los sitios con la autoactualización.
+
 ## 1.4.0 — 2026-09-17
 
 **Plugin**

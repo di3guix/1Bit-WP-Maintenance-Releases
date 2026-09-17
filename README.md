@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.4.0** (2026-09-17)
+**Última versión: 1.4.1** (2026-09-17)
 
 ---
 
@@ -78,9 +78,23 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.4.1** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.1.zip) | `5c670e3ae2510074…` |
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.4.1 — 2026-09-17
+
+**Plugin**
+- `/diagnostics/files` desglosa los archivos por tipo (miniaturas, WebP/AVIF generados, backups del
+  optimizador de imágenes, PHP, logs…) y acepta `path` para contar solo una carpeta.
+
+**Orquestador**
+- `files --path`: tabla por tipo y aviso si hay PHP dentro de `uploads`.
+- Suite de pruebas `files`.
+- `publish` arma el zip desde la misma carpeta de la que lee la versión.
+
+> Primera versión que llega sola a los sitios con la autoactualización.
 
 ### 1.4.0 — 2026-09-17
 

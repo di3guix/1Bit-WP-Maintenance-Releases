@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.1",
+    "published": "2026-09-17T19:32:29+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.1.zip",
+    "sha256": "5c670e3ae2510074b07d418bdf74d9a339c47a0c316068bf863165ab47cd7b03",
+    "notes": "**Plugin**\n- `/diagnostics/files` desglosa los archivos por tipo (miniaturas, WebP/AVIF generados, backups del\n  optimizador de imágenes, PHP, logs…) y acepta `path` para contar solo una carpeta.\n\n**Orquestador**\n- `files --path`: tabla por tipo y aviso si hay PHP dentro de `uploads`.\n- Suite de pruebas `files`.\n- `publish` arma el zip desde la misma carpeta de la que lee la versión.\n\n> Primera versión que llega sola a los sitios con la autoactualización."
+  },
+  {
     "version": "1.4.0",
     "published": "2026-09-17T18:58:24+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.0.zip",
