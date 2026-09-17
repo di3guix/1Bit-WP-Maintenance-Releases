@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.6",
+    "published": "2026-09-17T20:59:16+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.6.zip",
+    "sha256": "52ca2341e93272cd718c69c0b4b7132f8e274f78e29cb098f5032526be61201c",
+    "notes": "**Plugin**\n- El manifiesto se pide con cabeceras contra la caché: varios servidores seguían recibiendo una\n  copia vieja de `update.json` y no veían las versiones nuevas."
+  },
+  {
     "version": "1.4.5",
     "published": "2026-09-17T20:47:33+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.5.zip",

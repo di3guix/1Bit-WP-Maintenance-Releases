@@ -1,5 +1,11 @@
 # Cambios
 
+## 1.4.6 — 2026-09-17
+
+**Plugin**
+- El manifiesto se pide con cabeceras contra la caché: varios servidores seguían recibiendo una
+  copia vieja de `update.json` y no veían las versiones nuevas.
+
 ## 1.4.5 — 2026-09-17
 
 **Plugin**

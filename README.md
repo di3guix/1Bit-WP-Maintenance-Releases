@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.4.5** (2026-09-17)
+**Última versión: 1.4.6** (2026-09-17)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.4.6** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.6.zip) | `52ca2341e93272cd…` |
 | **1.4.5** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.5.zip) | `d0add65f1869bca2…` |
 | **1.4.4** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.4.zip) | `a956b331700ada3a…` |
 | **1.4.3** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.3.zip) | `de9ab114a26ec206…` |
@@ -86,6 +87,12 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.4.6 — 2026-09-17
+
+**Plugin**
+- El manifiesto se pide con cabeceras contra la caché: varios servidores seguían recibiendo una
+  copia vieja de `update.json` y no veían las versiones nuevas.
 
 ### 1.4.5 — 2026-09-17
 
