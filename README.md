@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.4.8** (2026-09-17)
+**Última versión: 1.4.9** (2026-09-18)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.4.9** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.4.9.zip) | `0bd7db1ed6e1fd3b…` |
 | **1.4.8** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.8.zip) | `5d072c7afd171659…` |
 | **1.4.7** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.7.zip) | `cbc6ae50bbb818db…` |
 | **1.4.6** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.6.zip) | `52ca2341e93272cd…` |
@@ -89,6 +90,13 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.4.9 — 2026-09-18
+
+**Plugin**
+- `/licenses/inspect`: licencia guardada de un plugin o tema (sin devolver la clave, solo si existe
+  y qué estado dice) y marcas de copias piratas en su código.
+- `/licenses/requests`: a qué fabricante le consulta cada plugin por actualizaciones y qué responde.
 
 ### 1.4.8 — 2026-09-17
 

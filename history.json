@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.4.9",
+    "published": "2026-09-18T13:32:04+02:00",
+    "file": "releases/1bit-wp-maintenance-1.4.9.zip",
+    "sha256": "0bd7db1ed6e1fd3b3760f4ca5d9d0875915289fe5f03585800b521730cc9619c",
+    "notes": "**Plugin**\n- `/licenses/inspect`: licencia guardada de un plugin o tema (sin devolver la clave, solo si existe\n  y qué estado dice) y marcas de copias piratas en su código.\n- `/licenses/requests`: a qué fabricante le consulta cada plugin por actualizaciones y qué responde."
+  },
+  {
     "version": "1.4.8",
     "published": "2026-09-17T21:18:19+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.8.zip",

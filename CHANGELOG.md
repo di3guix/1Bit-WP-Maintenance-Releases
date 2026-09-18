@@ -1,5 +1,12 @@
 # Cambios
 
+## 1.4.9 — 2026-09-18
+
+**Plugin**
+- `/licenses/inspect`: licencia guardada de un plugin o tema (sin devolver la clave, solo si existe
+  y qué estado dice) y marcas de copias piratas en su código.
+- `/licenses/requests`: a qué fabricante le consulta cada plugin por actualizaciones y qué responde.
+
 ## 1.4.8 — 2026-09-17
 
 **Plugin**
