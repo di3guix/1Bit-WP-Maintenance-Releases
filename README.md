@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.4.9** (2026-09-18)
+**Última versión: 1.5.0** (2026-09-18)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.5.0** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.0.zip) | `b04e6ed513bb4b83…` |
 | **1.4.9** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.4.9.zip) | `0bd7db1ed6e1fd3b…` |
 | **1.4.8** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.8.zip) | `5d072c7afd171659…` |
 | **1.4.7** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.7.zip) | `cbc6ae50bbb818db…` |
@@ -90,6 +91,22 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.5.0 — 2026-09-18
+
+**Plugin**
+- Señales de licencia afinadas con datos reales: se ignoran opciones que no son licencias
+  ("registration_skip", fechas, integraciones), y las marcas de pirateo se buscan solo en código y
+  sin la palabra "nulled" suelta (aparece en changelogs de librerías serias).
+
+**Orquestador**
+- Clasificación automática de los premium sin canal de actualización: **trucho** (marcas de
+  pirateo o licencia rechazada por el fabricante), **con licencia** (licencia guardada) o **sin
+  licencia detectable**. Se guarda una semana por sitio. `licensed` en `sites.json` sigue mandando.
+- `inventory` muestra el motivo de cada clasificación; el WhatsApp distingue trucho de sin licencia.
+- El test de navegación ya no revierte por mensajes de consola nuevos (login de Google, scripts de
+  terceros): solo por excepciones de JavaScript sin capturar, que es lo que tira un plugin roto.
+- Suite de pruebas `licencias`.
 
 ### 1.4.9 — 2026-09-18
 

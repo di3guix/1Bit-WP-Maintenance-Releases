@@ -1,5 +1,21 @@
 # Cambios
 
+## 1.5.0 — 2026-09-18
+
+**Plugin**
+- Señales de licencia afinadas con datos reales: se ignoran opciones que no son licencias
+  ("registration_skip", fechas, integraciones), y las marcas de pirateo se buscan solo en código y
+  sin la palabra "nulled" suelta (aparece en changelogs de librerías serias).
+
+**Orquestador**
+- Clasificación automática de los premium sin canal de actualización: **trucho** (marcas de
+  pirateo o licencia rechazada por el fabricante), **con licencia** (licencia guardada) o **sin
+  licencia detectable**. Se guarda una semana por sitio. `licensed` en `sites.json` sigue mandando.
+- `inventory` muestra el motivo de cada clasificación; el WhatsApp distingue trucho de sin licencia.
+- El test de navegación ya no revierte por mensajes de consola nuevos (login de Google, scripts de
+  terceros): solo por excepciones de JavaScript sin capturar, que es lo que tira un plugin roto.
+- Suite de pruebas `licencias`.
+
 ## 1.4.9 — 2026-09-18
 
 **Plugin**

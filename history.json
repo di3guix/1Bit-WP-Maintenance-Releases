@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.5.0",
+    "published": "2026-09-18T14:10:13+02:00",
+    "file": "releases/1bit-wp-maintenance-1.5.0.zip",
+    "sha256": "b04e6ed513bb4b83df2047eb3b696fe6629aef42a511a5ca99d204e03d289283",
+    "notes": "**Plugin**\n- Señales de licencia afinadas con datos reales: se ignoran opciones que no son licencias\n  (\"registration_skip\", fechas, integraciones), y las marcas de pirateo se buscan solo en código y\n  sin la palabra \"nulled\" suelta (aparece en changelogs de librerías serias).\n\n**Orquestador**\n- Clasificación automática de los premium sin canal de actualización: **trucho** (marcas de\n  pirateo o licencia rechazada por el fabricante), **con licencia** (licencia guardada) o **sin\n  licencia detectable**. Se guarda una semana por sitio. `licensed` en `sites.json` sigue mandando.\n- `inventory` muestra el motivo de cada clasificación; el WhatsApp distingue trucho de sin licencia.\n- El test de navegación ya no revierte por mensajes de consola nuevos (login de Google, scripts de\n  terceros): solo por excepciones de JavaScript sin capturar, que es lo que tira un plugin roto.\n- Suite de pruebas `licencias`."
+  },
+  {
     "version": "1.4.9",
     "published": "2026-09-18T13:32:04+02:00",
     "file": "releases/1bit-wp-maintenance-1.4.9.zip",
