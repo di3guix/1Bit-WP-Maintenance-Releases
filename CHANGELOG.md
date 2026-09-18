@@ -1,5 +1,19 @@
 # Cambios
 
+## 1.5.1 — 2026-09-18
+
+**Plugin**
+- Reconoce el registro de Slider Revolution (`revslider-valid`, `revslider-code`).
+
+**Orquestador**
+- Los truchos confirmados **no se actualizan**, aunque tengan canal de actualización: la descarga
+  oficial falla (y avisaba una falsa "licencia vencida") y la de un sitio pirata es la vía de
+  entrada del malware. Se revisan también los premium con canal del fabricante.
+- PRO Elements figura como trucho conocido (copia libre de Elementor Pro, sin licencia posible).
+- El código de compra de un fabricante vale para su tema y sus plugins (Bridge y Bridge Core), y
+  la licencia de un plugin no se le atribuye a otro del mismo fabricante (Divi Plus y Divi).
+- La caché de clasificaciones se descarta cuando cambia la versión del plugin del sitio.
+
 ## 1.5.0 — 2026-09-18
 
 **Plugin**

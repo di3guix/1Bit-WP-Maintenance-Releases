@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.5.0** (2026-09-18)
+**Última versión: 1.5.1** (2026-09-18)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.5.1** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.1.zip) | `0b0d0ec9ebfc98c4…` |
 | **1.5.0** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.0.zip) | `b04e6ed513bb4b83…` |
 | **1.4.9** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.4.9.zip) | `0bd7db1ed6e1fd3b…` |
 | **1.4.8** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.8.zip) | `5d072c7afd171659…` |
@@ -91,6 +92,20 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.5.1 — 2026-09-18
+
+**Plugin**
+- Reconoce el registro de Slider Revolution (`revslider-valid`, `revslider-code`).
+
+**Orquestador**
+- Los truchos confirmados **no se actualizan**, aunque tengan canal de actualización: la descarga
+  oficial falla (y avisaba una falsa "licencia vencida") y la de un sitio pirata es la vía de
+  entrada del malware. Se revisan también los premium con canal del fabricante.
+- PRO Elements figura como trucho conocido (copia libre de Elementor Pro, sin licencia posible).
+- El código de compra de un fabricante vale para su tema y sus plugins (Bridge y Bridge Core), y
+  la licencia de un plugin no se le atribuye a otro del mismo fabricante (Divi Plus y Divi).
+- La caché de clasificaciones se descarta cuando cambia la versión del plugin del sitio.
 
 ### 1.5.0 — 2026-09-18
 

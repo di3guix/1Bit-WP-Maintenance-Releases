@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.5.1",
+    "published": "2026-09-18T14:31:23+02:00",
+    "file": "releases/1bit-wp-maintenance-1.5.1.zip",
+    "sha256": "0b0d0ec9ebfc98c4137a8f27b047bf5da219af24b4a827bcaf40d079a52fbb5c",
+    "notes": "**Plugin**\n- Reconoce el registro de Slider Revolution (`revslider-valid`, `revslider-code`).\n\n**Orquestador**\n- Los truchos confirmados **no se actualizan**, aunque tengan canal de actualización: la descarga\n  oficial falla (y avisaba una falsa \"licencia vencida\") y la de un sitio pirata es la vía de\n  entrada del malware. Se revisan también los premium con canal del fabricante.\n- PRO Elements figura como trucho conocido (copia libre de Elementor Pro, sin licencia posible).\n- El código de compra de un fabricante vale para su tema y sus plugins (Bridge y Bridge Core), y\n  la licencia de un plugin no se le atribuye a otro del mismo fabricante (Divi Plus y Divi).\n- La caché de clasificaciones se descarta cuando cambia la versión del plugin del sitio."
+  },
+  {
     "version": "1.5.0",
     "published": "2026-09-18T14:10:13+02:00",
     "file": "releases/1bit-wp-maintenance-1.5.0.zip",

@@ -1,10 +1,10 @@
 {
   "name": "1bit-wp-maintenance",
-  "version": "1.5.0",
-  "package": "https://raw.githubusercontent.com/di3guix/1Bit-WP-Maintenance-Releases/main/releases/1bit-wp-maintenance-1.5.0.zip",
-  "sha256": "b04e6ed513bb4b83df2047eb3b696fe6629aef42a511a5ca99d204e03d289283",
+  "version": "1.5.1",
+  "package": "https://raw.githubusercontent.com/di3guix/1Bit-WP-Maintenance-Releases/main/releases/1bit-wp-maintenance-1.5.1.zip",
+  "sha256": "0b0d0ec9ebfc98c4137a8f27b047bf5da219af24b4a827bcaf40d079a52fbb5c",
   "requires": "5.6",
   "requires_php": "7.4",
-  "published": "2026-09-18T14:10:13+02:00",
-  "signature": "2ywZFK9qYuw5F0hOAwo41QP87II2uzXUlRrOUlB4nf2MBsrJKgJhHkj01CY62PFE/83Qn8XmkmXTC06OkgoeBA=="
+  "published": "2026-09-18T14:31:23+02:00",
+  "signature": "ue77odRpNS14hnWZCAOtmJfslMtWZmi/D+ri1VG2ioiwlJqVsbRwJVLGcnm/4Pjjs/+yVmw0cSxDV8cJzyNzCA=="
 }
