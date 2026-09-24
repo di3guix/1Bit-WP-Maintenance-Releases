@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.5.2",
+    "published": "2026-09-24T13:53:44+02:00",
+    "file": "releases/1bit-wp-maintenance-1.5.2.zip",
+    "sha256": "ac2c4b269a4fc5d648ef8b7fc75dae93e1789229322b7ed0c2363b3245f3086e",
+    "notes": "**Plugin**\n- El sitio guarda cuándo fue su última corrida de mantenimiento y desde qué máquina\n  (`/run/mark`, y `last_run` en `/status`).\n\n**Orquestador**\n- Las dos PCs pueden tener programados **todos** los sitios: la primera que llega actualiza y la\n  otra lo saltea, sin repetir el test de navegación, los snapshots ni los avisos. Si una PC está\n  apagada, la otra cubre todo. `--force` actualiza igual.\n- `\"runner\": \"todos\"` (o una lista de máquinas) en `sites.json`."
+  },
+  {
     "version": "1.5.1",
     "published": "2026-09-18T14:31:23+02:00",
     "file": "releases/1bit-wp-maintenance-1.5.1.zip",

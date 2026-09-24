@@ -1,5 +1,17 @@
 # Cambios
 
+## 1.5.2 — 2026-09-24
+
+**Plugin**
+- El sitio guarda cuándo fue su última corrida de mantenimiento y desde qué máquina
+  (`/run/mark`, y `last_run` en `/status`).
+
+**Orquestador**
+- Las dos PCs pueden tener programados **todos** los sitios: la primera que llega actualiza y la
+  otra lo saltea, sin repetir el test de navegación, los snapshots ni los avisos. Si una PC está
+  apagada, la otra cubre todo. `--force` actualiza igual.
+- `"runner": "todos"` (o una lista de máquinas) en `sites.json`.
+
 ## 1.5.1 — 2026-09-18
 
 **Plugin**

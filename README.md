@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.5.1** (2026-09-18)
+**Última versión: 1.5.2** (2026-09-24)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.5.2** | 2026-09-24 | [zip](releases/1bit-wp-maintenance-1.5.2.zip) | `ac2c4b269a4fc5d6…` |
 | **1.5.1** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.1.zip) | `0b0d0ec9ebfc98c4…` |
 | **1.5.0** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.0.zip) | `b04e6ed513bb4b83…` |
 | **1.4.9** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.4.9.zip) | `0bd7db1ed6e1fd3b…` |
@@ -92,6 +93,18 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.5.2 — 2026-09-24
+
+**Plugin**
+- El sitio guarda cuándo fue su última corrida de mantenimiento y desde qué máquina
+  (`/run/mark`, y `last_run` en `/status`).
+
+**Orquestador**
+- Las dos PCs pueden tener programados **todos** los sitios: la primera que llega actualiza y la
+  otra lo saltea, sin repetir el test de navegación, los snapshots ni los avisos. Si una PC está
+  apagada, la otra cubre todo. `--force` actualiza igual.
+- `"runner": "todos"` (o una lista de máquinas) en `sites.json`.
 
 ### 1.5.1 — 2026-09-18
 
