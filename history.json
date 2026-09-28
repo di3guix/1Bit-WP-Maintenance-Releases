@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.5.3",
+    "published": "2026-09-28T12:33:06+02:00",
+    "file": "releases/1bit-wp-maintenance-1.5.3.zip",
+    "sha256": "b8269530fc0c18df861a71c462ea31be198e3a38f9417742bb4c850bafef2179",
+    "notes": "**Plugin**\n- La marca de corrida guarda además el estado (`en curso` / `listo`) y su antigüedad: una PC puede\n  reservar el sitio antes de trabajar y la otra sabe si la reserva quedó colgada.\n\n**Orquestador**\n- **Un solo correo por corrida**, con todo el reporte: lo actualizado, lo verificado, los cambios\n  visuales, las licencias, las reversiones y lo que quedó sin tocar.\n- **WhatsApp solo para lo grave**: un sitio que quedó roto o que no se pudo revisar.\n- **Grupos de sitios** (`groups` en `sites.json`) con la hora de cada máquina: una tarea por grupo,\n  un correo por grupo. `update --group` y `check --group`.\n- La reserva del sitio se toma **antes** de trabajar, porque las dos PCs pueden arrancar en el mismo\n  instante. Una reserva colgada más de 90 minutos la retoma la otra máquina."
+  },
+  {
     "version": "1.5.2",
     "published": "2026-09-24T13:53:44+02:00",
     "file": "releases/1bit-wp-maintenance-1.5.2.zip",

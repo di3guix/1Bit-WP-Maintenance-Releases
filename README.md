@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.5.2** (2026-09-24)
+**Última versión: 1.5.3** (2026-09-28)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.5.3** | 2026-09-28 | [zip](releases/1bit-wp-maintenance-1.5.3.zip) | `b8269530fc0c18df…` |
 | **1.5.2** | 2026-09-24 | [zip](releases/1bit-wp-maintenance-1.5.2.zip) | `ac2c4b269a4fc5d6…` |
 | **1.5.1** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.1.zip) | `0b0d0ec9ebfc98c4…` |
 | **1.5.0** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.0.zip) | `b04e6ed513bb4b83…` |
@@ -93,6 +94,21 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.5.3 — 2026-09-28
+
+**Plugin**
+- La marca de corrida guarda además el estado (`en curso` / `listo`) y su antigüedad: una PC puede
+  reservar el sitio antes de trabajar y la otra sabe si la reserva quedó colgada.
+
+**Orquestador**
+- **Un solo correo por corrida**, con todo el reporte: lo actualizado, lo verificado, los cambios
+  visuales, las licencias, las reversiones y lo que quedó sin tocar.
+- **WhatsApp solo para lo grave**: un sitio que quedó roto o que no se pudo revisar.
+- **Grupos de sitios** (`groups` en `sites.json`) con la hora de cada máquina: una tarea por grupo,
+  un correo por grupo. `update --group` y `check --group`.
+- La reserva del sitio se toma **antes** de trabajar, porque las dos PCs pueden arrancar en el mismo
+  instante. Una reserva colgada más de 90 minutos la retoma la otra máquina.
 
 ### 1.5.2 — 2026-09-24
 
