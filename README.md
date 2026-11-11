@@ -6,7 +6,7 @@ WordPress mantenidos por [1Bit](https://1bit.com.ar).
 > Este repositorio **no contiene código fuente**. El código y las herramientas de
 > mantenimiento están en un repositorio privado.
 
-**Última versión: 1.5.3** (2026-09-28)
+**Última versión: 1.5.4** (2026-11-11)
 
 ---
 
@@ -78,6 +78,7 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 
 | Versión | Fecha | Descarga | SHA-256 |
 |---|---|---|---|
+| **1.5.4** | 2026-11-11 | [zip](releases/1bit-wp-maintenance-1.5.4.zip) | `f153ef5bee308cf9…` |
 | **1.5.3** | 2026-09-28 | [zip](releases/1bit-wp-maintenance-1.5.3.zip) | `b8269530fc0c18df…` |
 | **1.5.2** | 2026-09-24 | [zip](releases/1bit-wp-maintenance-1.5.2.zip) | `ac2c4b269a4fc5d6…` |
 | **1.5.1** | 2026-09-18 | [zip](releases/1bit-wp-maintenance-1.5.1.zip) | `0b0d0ec9ebfc98c4…` |
@@ -94,6 +95,31 @@ Para un sitio nuevo, o uno con una versión anterior a la 1.4.0 (que no sabe aut
 | **1.4.0** | 2026-09-17 | [zip](releases/1bit-wp-maintenance-1.4.0.zip) | `f46f82b5260878fa…` |
 
 ## Cambios
+
+### 1.5.4 — 2026-11-11
+
+**Plugin**
+- **PRO Elements se actualiza solo** desde las releases de su repositorio de GitHub
+  (`proelements/proelements`). La lista de repositorios es fija (`OneBit_WPM_Github_Sources::SOURCES`)
+  y solo se acepta el zip publicado en la release de ese mismo repositorio. La versión nueva aparece
+  como cualquier actualización pendiente, así que pasa por el mismo backup, verificación y rollback.
+- Diagnóstico de contraseñas de aplicación: además de Wordfence Login Security, revisa los ajustes
+  del Wordfence completo (`wfconfig` → `loginSec_disableApplicationPasswords`), que las desactiva
+  desde Firewall → Todas las opciones. Así fue en Black Paprika el 11/11/2026.
+
+**Orquestador**
+- PRO Elements deja de contar como trucho cuando tiene canal de actualización (plugin 1.5.4+).
+- Los avisos dicen "se revirtió lo que falló" solo cuando se revirtió algo. Si el sitio se salteó
+  (por ejemplo, un 401 de autenticación o el test de navegación que ya fallaba antes), dicen
+  "No se tocó nada: el sitio quedó como estaba". Si solo hay licencias, no llevan encabezado de
+  estado, y el título por WhatsApp pasa a ser "ATENCIÓN · hay algo para revisar".
+- Lo que queda sin actualizar a propósito (`hold`, PHP incompatible, un PRO que espera a su versión
+  gratuita) ya no aparece en los avisos: el sitio funciona y no hay nada que hacer. Sigue en el log.
+- Un plugin PRO que no entrega el paquete porque pide actualizar antes su versión gratuita (Rank
+  Math SEO PRO espera a Rank Math SEO) ya no se informa como licencia vencida. Se deja para el final
+  de la corrida, se vuelve a consultar al sitio y se actualiza en la misma corrida. `check` lo muestra
+  como "después de Rank Math SEO".
+- Nueva suite de pruebas `github`: instala un PRO Elements viejo y lo actualiza con el zip real.
 
 ### 1.5.3 — 2026-09-28
 
